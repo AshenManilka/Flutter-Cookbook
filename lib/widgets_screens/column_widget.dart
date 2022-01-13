@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 
 
-class ColumnScreen extends StatefulWidget {
-  const ColumnScreen({Key? key}) : super(key: key);
+class  ColumnScreen extends StatelessWidget {
+  const  ColumnScreen({ Key? key }) : super(key: key);
 
-  @override
-  _ColumnScreenState createState() => _ColumnScreenState();
-}
-
-class _ColumnScreenState extends State<ColumnScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+     return Scaffold(
       body:
        
       SizedBox(

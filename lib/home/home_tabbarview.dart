@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:widget_book/data/cookbook_data.dart';
-import 'package:widget_book/data/lwidget_data.dart';
+import 'package:widget_book/data/widget_data.dart';
 import 'package:widget_book/model/cookbook_listitem_model.dart';
 
 import 'code_view_screenn.dart';

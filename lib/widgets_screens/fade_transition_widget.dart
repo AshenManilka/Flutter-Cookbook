@@ -27,7 +27,8 @@ class _MyStatefulWidgetState extends State<FadeTransitionScreen>
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return 
+    Container(
       color: Colors.black,
       child: FadeTransition(
         opacity: _animation,
@@ -36,3 +37,8 @@ class _MyStatefulWidgetState extends State<FadeTransitionScreen>
     );
   }
 }
+
+
+
+
+ 

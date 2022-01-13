@@ -4,6 +4,8 @@ import 'package:flutter/services.dart';
 
 import 'package:widget_book/home/home_tabbarview.dart';
 
+import 'launchScreen.dart';
+
 // void main() => runApp(
 //       DevicePreview(
 //         enabled: !kReleaseMode,
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
       // useInheritedMediaQuery: true,
       // locale: DevicePreview.locale(context),
       // builder: DevicePreview.appBuilder,
-      home: const TabBarDemo(),
+      home: const LaunchScreen(),
     );
   }
 }
