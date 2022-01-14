@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:widget_book/model/widget_listitem_model.dart';
+import 'package:widget_book/widgets_screens/align_widget.dart';
+import 'package:widget_book/widgets_screens/aspectratio_widget.dart';
+import 'package:widget_book/widgets_screens/backdropfilter_widget.dart';
 import 'package:widget_book/widgets_screens/cardview_widget.dart';
 import 'package:widget_book/widgets_screens/chip_widget.dart';
 import 'package:widget_book/widgets_screens/cliprrect_widget.dart';
+import 'package:widget_book/widgets_screens/dismissible_widget.dart';
 import 'package:widget_book/widgets_screens/divider_widget.dart';
+import 'package:widget_book/widgets_screens/draggable_widget.dart';
 import 'package:widget_book/widgets_screens/expanded_widget.dart';
 import 'package:widget_book/widgets_screens/fade_transition_widget.dart';
 import 'package:widget_book/widgets_screens/fadeinimage.dart';
@@ -14,8 +19,12 @@ import 'package:widget_book/widgets_screens/hero_widget.dart';
 import 'package:widget_book/widgets_screens/listtile_widget.dart';
 import 'package:widget_book/widgets_screens/listview_widget.dart';
 import 'package:widget_book/widgets_screens/page_view_widget.dart';
+import 'package:widget_book/widgets_screens/positioned_widget.dart';
+import 'package:widget_book/widgets_screens/richtext_widget.dart';
 import 'package:widget_book/widgets_screens/safe_area.dart';
+import 'package:widget_book/widgets_screens/sizedboxx.dart';
 import 'package:widget_book/widgets_screens/sliverappbar.dart';
+import 'package:widget_book/widgets_screens/spacer_widget.dart';
 import 'package:widget_book/widgets_screens/table_class_widget.dart';
 import 'package:widget_book/widgets_screens/textinput_widget.dart';
 import 'package:widget_book/widgets_screens/tooltip_widget.dart';
@@ -219,4 +228,49 @@ List<WidgetListItem> WidgetlistItems = [
       screenRout: const TransformWidgetScreen(),
       leading: const Icon(Icons.ac_unit_outlined),
       sourcepath: 'lib/widgets_screens/transform_widget.dart'),
+  WidgetListItem(
+      item: 'Backdrop Filter',
+      screenRout: const BackdropFilterScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/backdropfilter_widget.dart'),
+  WidgetListItem(
+      item: 'Align',
+      screenRout: const AlignWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/align_widget.dart'),
+  WidgetListItem(
+      item: 'Position',
+      screenRout: const PositionWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/positioned_widget.dart'),
+  WidgetListItem(
+      item: 'Disissible',
+      screenRout: const DismissibleWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/dismissible_widget.dart'),
+  WidgetListItem(
+      item: 'SizedBox',
+      screenRout: const SizedBoxWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/sizedboxx.dart'),
+  WidgetListItem(
+      item: 'Draggable',
+      screenRout: const DraggableWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/draggable_widget.dart'),
+  WidgetListItem(
+      item: 'Spacer',
+      screenRout: const SpacerWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/spacer_widget.dart'),
+  WidgetListItem(
+      item: ' AspectRatio',
+      screenRout: const AspectRatioWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/aspectratio_widget.dart'),
+  WidgetListItem(
+      item: ' Rich Text',
+      screenRout: const RichTextWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/richtext_widget.dart'),
 ];
