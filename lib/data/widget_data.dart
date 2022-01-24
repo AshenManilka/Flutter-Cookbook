@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:widget_book/model/widget_listitem_model.dart';
 import 'package:widget_book/widgets_screens/align_widget.dart';
+import 'package:widget_book/widgets_screens/animatedcrossfade_widget.dart';
+import 'package:widget_book/widgets_screens/animatedopacity_widget.dart';
 import 'package:widget_book/widgets_screens/aspectratio_widget.dart';
 import 'package:widget_book/widgets_screens/backdropfilter_widget.dart';
 import 'package:widget_book/widgets_screens/cardview_widget.dart';
@@ -25,11 +27,14 @@ import 'package:widget_book/widgets_screens/safe_area.dart';
 import 'package:widget_book/widgets_screens/sizedboxx.dart';
 import 'package:widget_book/widgets_screens/sliverappbar.dart';
 import 'package:widget_book/widgets_screens/spacer_widget.dart';
+import 'package:widget_book/widgets_screens/stack_widget.dart';
+import 'package:widget_book/widgets_screens/streambuilder_widget.dart';
 import 'package:widget_book/widgets_screens/table_class_widget.dart';
 import 'package:widget_book/widgets_screens/textinput_widget.dart';
 import 'package:widget_book/widgets_screens/tooltip_widget.dart';
 import 'package:widget_book/widgets_screens/transform_widget.dart';
 import 'package:widget_book/widgets_screens/wrap_widget.dart';
+import '../widgets_screens/constrainedbox_widget.dart';
 import '../widgets_screens/appbar_widget.dart';
 import '../widgets_screens/column_widget.dart';
 import '../widgets_screens/container_widget.dart';
@@ -47,7 +52,7 @@ import '../widgets_screens/slider_widget.dart';
 import '../widgets_screens/text_widget.dart';
 
 // ignore: non_constant_identifier_names
-List<WidgetListItem> WidgetlistItems = [
+final WidgetlistItems = <WidgetListItem>[
   WidgetListItem(
       item: 'AppBar',
       screenRout: const AppBarScreen(),
@@ -273,4 +278,34 @@ List<WidgetListItem> WidgetlistItems = [
       screenRout: const RichTextWidgetScreen(),
       leading: const Icon(Icons.ac_unit_outlined),
       sourcepath: 'lib/widgets_screens/richtext_widget.dart'),
+
+  //  WidgetListItem(
+  // item: ' StreamBuilder',
+  // screenRout: const StreamBuilderScreen(),
+  // leading: const Icon(Icons.ac_unit_outlined),
+  // sourcepath: 'lib/widgets_screens/streambuilder_widget.dart'),
+
+  WidgetListItem(
+      item: ' ConstrainedBox',
+      screenRout: const ConstrainedBoxScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/constrainedbox_widget.dart'),
+
+  WidgetListItem(
+      item: ' Stack',
+      screenRout: const StackWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/stack_widget.dart'),
+
+  WidgetListItem(
+      item: ' Animated Opacity',
+      screenRout: const LogoFade(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/animatedopacity_widget.dart'),
+
+  WidgetListItem(
+      item: ' Animated Cross Fade',
+      screenRout: const CrossFadeScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/animatedcrossfade_widget.dart'),
 ];

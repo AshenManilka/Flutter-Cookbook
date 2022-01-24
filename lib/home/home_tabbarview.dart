@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+// import 'package:flutter/services.dart';
 import 'package:widget_book/data/cookbook_data.dart';
 import 'package:widget_book/data/widget_data.dart';
-import 'package:widget_book/model/cookbook_listitem_model.dart';
+import 'package:widget_book/model/widget_listitem_model.dart';
+// import 'package:widget_book/model/cookbook_listitem_model.dart';
 
 import 'code_view_screenn.dart';
 
@@ -14,6 +15,17 @@ class TabBarDemo extends StatefulWidget {
 }
 
 class _TabBarDemoState extends State<TabBarDemo> {
+  // ignore: non_constant_identifier_names
+  late List<WidgetListItem> WListItems;
+
+  bool isSearching = false;
+
+  @override
+  void initState() {
+    super.initState();
+    WListItems = WidgetlistItems;
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,6 +38,13 @@ class _TabBarDemoState extends State<TabBarDemo> {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
+            title: Text('Flutter Cookbook'),
+            titleTextStyle: const TextStyle(
+                color: Colors.white70,
+                fontSize: 25.0,
+                fontWeight: FontWeight.w700),
+            centerTitle: true,
+
             bottom: TabBar(
               tabs: [
                 Tab(
@@ -55,13 +74,8 @@ class _TabBarDemoState extends State<TabBarDemo> {
                 ), // cookbook tab
               ],
             ),
-            title: const Text('Flutter Cookbook'),
+
             // leading: Icon(Icons.dock),
-            titleTextStyle: const TextStyle(
-                color: Colors.white70,
-                fontSize: 25.0,
-                fontWeight: FontWeight.w700),
-            centerTitle: true,
           ),
           body: TabBarView(
             children: [
@@ -70,7 +84,7 @@ class _TabBarDemoState extends State<TabBarDemo> {
                 child: Container(
                   margin: const EdgeInsets.only(top: 7),
                   child: ListView.builder(
-                    itemCount: WidgetlistItems.length, // list length
+                    itemCount: WListItems.length, // list length
                     itemBuilder: (context, index) {
                       return Container(
                         margin: const EdgeInsets.fromLTRB(10, 12, 10, 0),
@@ -82,24 +96,19 @@ class _TabBarDemoState extends State<TabBarDemo> {
                         child: Column(
                           children: <Widget>[
                             ListTile(
-                                leading:
-                                    (WidgetlistItems.elementAt(index).leading),
-                                title:
-                                    Text(WidgetlistItems.elementAt(index).item),
+                                leading: (WListItems.elementAt(index).leading),
+                                title: Text(WListItems.elementAt(index).item),
                                 onTap: () {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) => PageviewScreen(
-                                        pagePath:
-                                            WidgetlistItems.elementAt(index)
-                                                .screenRout,
-                                        soursePath:
-                                            WidgetlistItems.elementAt(index)
-                                                .sourcepath,
+                                        pagePath: WListItems.elementAt(index)
+                                            .screenRout,
+                                        soursePath: WListItems.elementAt(index)
+                                            .sourcepath,
                                         itemName:
-                                            WidgetlistItems.elementAt(index)
-                                                .item,
+                                            WListItems.elementAt(index).item,
                                       ),
                                     ),
                                   );
