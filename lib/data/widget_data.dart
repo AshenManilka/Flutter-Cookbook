@@ -1,13 +1,27 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widget_book/model/widget_listitem_model.dart';
+import 'package:widget_book/widgets_screens/Clippath_widget.dart';
+import 'package:widget_book/widgets_screens/alertdialog.dart';
 import 'package:widget_book/widgets_screens/align_widget.dart';
 import 'package:widget_book/widgets_screens/animatedcrossfade_widget.dart';
 import 'package:widget_book/widgets_screens/animatedopacity_widget.dart';
 import 'package:widget_book/widgets_screens/aspectratio_widget.dart';
 import 'package:widget_book/widgets_screens/backdropfilter_widget.dart';
+import 'package:widget_book/widgets_screens/banner_widget.dart';
+import 'package:widget_book/widgets_screens/baseline_widget.dart';
+import 'package:widget_book/widgets_screens/bottomappbar.dart';
+import 'package:widget_book/widgets_screens/bottombar_widget.dart';
+import 'package:widget_book/widgets_screens/bottomnavigationbar.dart';
+import 'package:widget_book/widgets_screens/bottomsheet.dart';
 import 'package:widget_book/widgets_screens/cardview_widget.dart';
 import 'package:widget_book/widgets_screens/chip_widget.dart';
 import 'package:widget_book/widgets_screens/cliprrect_widget.dart';
+import 'package:widget_book/widgets_screens/cupertinoactionsheet_Widget.dart';
+import 'package:widget_book/widgets_screens/cupertinoactivityindicator.dart';
+import 'package:widget_book/widgets_screens/cupertinoalertdialog_widget.dart';
+import 'package:widget_book/widgets_screens/cupertinobutton_widget.dart';
+import 'package:widget_book/widgets_screens/cupertinocontextmenu_widget.dart';
 import 'package:widget_book/widgets_screens/dismissible_widget.dart';
 import 'package:widget_book/widgets_screens/divider_widget.dart';
 import 'package:widget_book/widgets_screens/draggable_widget.dart';
@@ -308,4 +322,82 @@ final WidgetlistItems = <WidgetListItem>[
       screenRout: const CrossFadeScreen(),
       leading: const Icon(Icons.ac_unit_outlined),
       sourcepath: 'lib/widgets_screens/animatedcrossfade_widget.dart'),
+
+  WidgetListItem(
+      item: 'AlertDialog',
+      screenRout: const AlertDialogWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/alertdialog.dart'),
+
+  WidgetListItem(
+      item: 'Banner',
+      screenRout: const BannerWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/banner_widget.dart'),
+
+  WidgetListItem(
+      item: 'Baseline',
+      screenRout: const BaselineWidgetScree(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/baseline_widget.dart'),
+
+  WidgetListItem(
+      item: 'Bottom App Bar',
+      screenRout: const BottomAppBarWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/bottomappbar.dart'),
+
+  WidgetListItem(
+      item: 'Bottom Navigation Bar',
+      screenRout: const BottomNavigationBarScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/bottomnavigationbar.dart'),
+
+  WidgetListItem(
+      item: 'BottomSheet',
+      screenRout: const BottomsheetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/bottomsheet.dart'),
+
+//  WidgetListItem(
+//       item: 'BottomBar',
+//       screenRout: const  BottomBarWidgetScreen(),
+//       leading: const Icon(Icons.ac_unit_outlined),
+//       sourcepath: 'lib/widgets_screens/bottombar_widget.dart'),
+
+  WidgetListItem(
+      item: 'ClipPath',
+      screenRout: ClippathWidgetScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/Clippath_widget.dart'),
+
+  WidgetListItem(
+      item: 'CupertinoActionSheet',
+      screenRout: CupertinoActionSheenScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinoactionsheet_Widget.dart'),
+
+  WidgetListItem(
+      item: 'CupertinoActivityIndicator',
+      screenRout: CupertinoActivityIndicator(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinoactivityindicator.dart'),
+
+  WidgetListItem(
+      item: 'CupertinoAlertDialog',
+      screenRout: CupertinoAlertDialogScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinoalertdialog_widget.dart'),
+
+  WidgetListItem(
+      item: 'CupertinoButton',
+      screenRout: CupertinoButtonScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinobutton_widget.dart'),
+
+  WidgetListItem(
+      item: 'CupertinoContextMenu',
+      screenRout: CupertinoContextMenuScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinocontextmenu_widget.dart'),
 ];
