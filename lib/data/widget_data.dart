@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widget_book/model/widget_listitem_model.dart';
 import 'package:widget_book/widgets_screens/Clippath_widget.dart';
+import 'package:widget_book/widgets_screens/CoustomScrollView.dart';
 import 'package:widget_book/widgets_screens/alertdialog.dart';
 import 'package:widget_book/widgets_screens/align_widget.dart';
 import 'package:widget_book/widgets_screens/animatedcrossfade_widget.dart';
@@ -22,6 +23,17 @@ import 'package:widget_book/widgets_screens/cupertinoactivityindicator.dart';
 import 'package:widget_book/widgets_screens/cupertinoalertdialog_widget.dart';
 import 'package:widget_book/widgets_screens/cupertinobutton_widget.dart';
 import 'package:widget_book/widgets_screens/cupertinocontextmenu_widget.dart';
+import 'package:widget_book/widgets_screens/cupertinodatepiker.dart';
+import 'package:widget_book/widgets_screens/cupertinolider.dart';
+import 'package:widget_book/widgets_screens/cupertinonavigationbar.dart';
+import 'package:widget_book/widgets_screens/cupertinopagescaffold.dart';
+import 'package:widget_book/widgets_screens/cupertinoswitch.dart';
+import 'package:widget_book/widgets_screens/cupertinotabbar.dart';
+import 'package:widget_book/widgets_screens/cupertinotimepicker.dart';
+import 'package:widget_book/widgets_screens/datatable.dart';
+import 'package:widget_book/widgets_screens/datePicker.dart';
+import 'package:widget_book/widgets_screens/decoratedbox.dart';
+import 'package:widget_book/widgets_screens/decoratedboxtransaction.dart';
 import 'package:widget_book/widgets_screens/dismissible_widget.dart';
 import 'package:widget_book/widgets_screens/divider_widget.dart';
 import 'package:widget_book/widgets_screens/draggable_widget.dart';
@@ -182,6 +194,12 @@ final WidgetlistItems = <WidgetListItem>[
       screenRout: const SliverAppBarScreen(),
       leading: const Icon(Icons.class__rounded),
       sourcepath: 'lib/widgets_screens/sliverappbar.dart'),
+
+  WidgetListItem(
+      item: 'Coustom ScrollView',
+      screenRout: CoustomScrollViewScreeen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/CoustomScrollView.dart'),
   WidgetListItem(
       item: 'ClipRRect',
       screenRout: const CliiRRectScreen(),
@@ -263,7 +281,7 @@ final WidgetlistItems = <WidgetListItem>[
       leading: const Icon(Icons.ac_unit_outlined),
       sourcepath: 'lib/widgets_screens/positioned_widget.dart'),
   WidgetListItem(
-      item: 'Disissible',
+      item: 'Disimissible',
       screenRout: const DismissibleWidgetScreen(),
       leading: const Icon(Icons.ac_unit_outlined),
       sourcepath: 'lib/widgets_screens/dismissible_widget.dart'),
@@ -372,32 +390,98 @@ final WidgetlistItems = <WidgetListItem>[
       sourcepath: 'lib/widgets_screens/Clippath_widget.dart'),
 
   WidgetListItem(
-      item: 'CupertinoActionSheet',
+      item: 'Cupertino ActionSheet',
       screenRout: CupertinoActionSheenScreen(),
       leading: const Icon(Icons.ac_unit_outlined),
       sourcepath: 'lib/widgets_screens/cupertinoactionsheet_Widget.dart'),
 
   WidgetListItem(
-      item: 'CupertinoActivityIndicator',
+      item: 'Cupertino Activity Indicator',
       screenRout: CupertinoActivityIndicator(),
       leading: const Icon(Icons.ac_unit_outlined),
       sourcepath: 'lib/widgets_screens/cupertinoactivityindicator.dart'),
 
   WidgetListItem(
-      item: 'CupertinoAlertDialog',
+      item: 'Cupertino Alert Dialog',
       screenRout: CupertinoAlertDialogScreen(),
       leading: const Icon(Icons.ac_unit_outlined),
       sourcepath: 'lib/widgets_screens/cupertinoalertdialog_widget.dart'),
 
   WidgetListItem(
-      item: 'CupertinoButton',
+      item: 'Cupertino Button',
       screenRout: CupertinoButtonScreen(),
       leading: const Icon(Icons.ac_unit_outlined),
       sourcepath: 'lib/widgets_screens/cupertinobutton_widget.dart'),
 
   WidgetListItem(
-      item: 'CupertinoContextMenu',
+      item: 'Cupertino ContextMenu',
       screenRout: CupertinoContextMenuScreen(),
       leading: const Icon(Icons.ac_unit_outlined),
       sourcepath: 'lib/widgets_screens/cupertinocontextmenu_widget.dart'),
+
+  WidgetListItem(
+      item: 'Cupertino Date Piker',
+      screenRout: CupertinodatapikerScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinodatepiker.dart'),
+
+  WidgetListItem(
+      item: 'Cupertino Navigation Bar',
+      screenRout: CupertinoNavigationBarScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinonavigationbar.dart'),
+
+  WidgetListItem(
+      item: '     Cupertino PageScaffold',
+      screenRout: CupertinoPageScaffoldScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinopagescaffold.dart'),
+
+  WidgetListItem(
+      item: '     Cupertino Slider',
+      screenRout: CupertinoSliderScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinolider.dart'),
+
+  WidgetListItem(
+      item: 'Cupertino Switch',
+      screenRout: CupertinoSwitchScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinoswitch.dart'),
+
+  WidgetListItem(
+      item: 'Cupertino TabBar',
+      screenRout: CupertinoTabBarScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinotabbar.dart'),
+
+  WidgetListItem(
+      item: 'Cupertino Time Picker',
+      screenRout: CupertinoTimepickerScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/cupertinotimepicker.dart'),
+
+  WidgetListItem(
+      item: 'DataTable',
+      screenRout: DataTabelsScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/datatable.dart'),
+
+  WidgetListItem(
+      item: 'Date Picker',
+      screenRout: DatePickerScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/datePicker.dart'),
+
+  WidgetListItem(
+      item: 'Decorated Box',
+      screenRout: DecoratedBoxScren(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/decoratedbox.dart'),
+
+  WidgetListItem(
+      item: ' Decorated Box Transaction',
+      screenRout: DecoratedBoxTransactionScreen(),
+      leading: const Icon(Icons.ac_unit_outlined),
+      sourcepath: 'lib/widgets_screens/decoratedboxtransaction.dart'),
 ];

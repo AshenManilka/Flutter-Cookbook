@@ -31,6 +31,7 @@ class _TabBarDemoState extends State<TabBarDemo> {
   void initState() {
     super.initState();
     WListItems = WidgetlistItems;
+    WidgetSearchListOnSearch = widgetSearchList;
   }
 
   @override
@@ -75,7 +76,7 @@ class _TabBarDemoState extends State<TabBarDemo> {
                         setState(() {
                           isSearching = false;
                           isSearchingtype = false;
-                          WidgetSearchListOnSearch = [];
+                          WidgetSearchListOnSearch = widgetSearchList;
                         });
                       },
                       icon: const Icon(Icons.cancel))
